@@ -13,6 +13,8 @@ Install VirtualBox and Vagrant locally on your Windows:
 3) "vagrant up" in a shell.
 
 #### Inpect output
+See https://github.com/Dezolder/kubenet-tutorial-vagrant/blob/main/output.txt
+
 In a vagrant provision shells - there step-by-step scripts. Use std-output to see the progress.
 
 #### KNOWN ISSUES
