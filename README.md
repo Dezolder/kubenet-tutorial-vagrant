@@ -14,3 +14,6 @@ Install VirtualBox and Vagrant locally on your Windows:
 
 #### Inpect output
 In a vagrant provision shells - there step-by-step scripts. Use std-output to see the progress.
+
+#### KNOWN ISSUES
+1) Dummy Kubernetes namespace at kubenetctl v0.0.4. Issue on a github: https://github.com/kubenet-dev/kubenetctl/pull/8
