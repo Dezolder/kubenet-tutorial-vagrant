@@ -1,0 +1,346 @@
+==> kubenet: Running provisioner: Install Kubectl (shell)...
+    kubenet: Running: script: Install Kubectl
+    kubenet: 
+    kubenet: PRECONDITION STEP: Installing kubectl
+    kubenet:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+    kubenet:                                  Dload  Upload   Total   Spent    Left  Speed
+100   138  100   138    0     0    446      0 --:--:-- --:--:-- --:--:--   445
+100 57.3M  100 57.3M    0     0  14.4M      0  0:00:03  0:00:03 --:--:-- 16.9M
+    kubenet: Client Version: v1.33.0
+    kubenet: Kustomize Version: v5.6.0
+==> kubenet: Running provisioner: Install Kubenetctl (shell)...
+    kubenet: Running: script: Install Kubenetctl
+    kubenet: 
+    kubenet: PRECONDITION STEP: Installing kubenetctl
+    kubenet: Downloading https://github.com/kubenet-dev/kubenetctl/releases/download/v0.0.3/kubenetctl_0.0.3_linux_x86_64.tar.gz
+    kubenet: Preparing to install kubenetctl 0.0.3 into /usr/local/bin
+    kubenet: kubenetctl installed into /usr/local/bin/kubenetctl
+    kubenet:     version: 0.0.3
+    kubenet:      commit: d12d6ff
+    kubenet:        date: 2024-05-29T20:08:30Z
+    kubenet:      source: https://github.com/kubenet-dev/kubenetctl
+    kubenet:  rel. notes: https://learn.kubenet.dev/rn/0.0.3
+    kubenet:     version: 0.0.3
+    kubenet:      commit: d12d6ff
+    kubenet:        date: 2024-05-29T20:08:30Z
+    kubenet:      source: https://github.com/kubenet-dev/kubenetctl
+    kubenet:  rel. notes: https://learn.kubenet.dev/rn/0.0.3
+==> kubenet: Running provisioner: Install Kind (shell)...
+    kubenet: Running: script: Install Kind
+    kubenet: 
+    kubenet: PRECONDITION STEP: Installing Kind
+    kubenet:   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+    kubenet:                                  Dload  Upload   Total   Spent    Left  Speed
+100    97  100    97    0     0    220      0 --:--:-- --:--:-- --:--:--   220
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+100 6660k  100 6660k    0     0  4035k      0  0:00:01  0:00:01 --:--:-- 20.2M
+    kubenet: kind v0.11.1 go1.16.4 linux/amd64
+==> kubenet: Running provisioner: Install Docker (shell)...
+    kubenet: Running: script: Install Docker
+    kubenet: 
+    kubenet: PRECONDITION STEP: Installing Docker
+    kubenet: Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+    kubenet: Hit:2 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
+    kubenet: Hit:3 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+    kubenet: Hit:4 http://security.ubuntu.com/ubuntu jammy-security InRelease
+    kubenet: Reading package lists...
+    kubenet: Reading package lists...
+    kubenet: Building dependency tree...
+    kubenet: Reading state information...
+    kubenet: ca-certificates is already the newest version (20240203~22.04.1).
+    kubenet: ca-certificates set to manually installed.
+    kubenet: curl is already the newest version (7.81.0-1ubuntu1.20).
+    kubenet: curl set to manually installed.
+    kubenet: software-properties-common is already the newest version (0.99.22.9).
+    kubenet: software-properties-common set to manually installed.
+    kubenet: The following NEW packages will be installed:
+    kubenet:   apt-transport-https
+    kubenet: 0 upgraded, 1 newly installed, 0 to remove and 49 not upgraded.
+    kubenet: Need to get 1510 B of archives.
+    kubenet: After this operation, 170 kB of additional disk space will be used.
+    kubenet: Get:1 http://archive.ubuntu.com/ubuntu jammy-updates/universe amd64 apt-transport-https all 2.4.13 [1510 B]
+    kubenet: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+    kubenet: Fetched 1510 B in 0s (12.2 kB/s)
+    kubenet: Selecting previously unselected package apt-transport-https.
+(Reading database ... 70212 files and directories currently installed.)
+    kubenet: Preparing to unpack .../apt-transport-https_2.4.13_all.deb ...
+    kubenet: Unpacking apt-transport-https (2.4.13) ...
+    kubenet: Setting up apt-transport-https (2.4.13) ...
+    kubenet: 
+    kubenet: Running kernel seems to be up-to-date.
+    kubenet:
+    kubenet: No services need to be restarted.
+    kubenet:
+    kubenet: No containers need to be restarted.
+    kubenet:
+    kubenet: No user sessions are running outdated binaries.
+    kubenet:
+    kubenet: No VM guests are running outdated hypervisor (qemu) binaries on this host.
+    kubenet: Warning: apt-key is deprecated. Manage keyring files in trusted.gpg.d instead (see apt-key(8)).
+    kubenet: OK
+    kubenet: Hit:1 http://security.ubuntu.com/ubuntu jammy-security InRelease
+    kubenet: Hit:2 http://archive.ubuntu.com/ubuntu jammy InRelease
+    kubenet: Hit:3 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
+    kubenet: Get:4 https://download.docker.com/linux/ubuntu jammy InRelease [48.8 kB]
+    kubenet: Hit:5 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+    kubenet: Get:6 https://download.docker.com/linux/ubuntu jammy/stable amd64 Packages [48.8 kB]
+    kubenet: Fetched 97.6 kB in 1s (103 kB/s)
+    kubenet: Reading package lists...
+    kubenet: W: https://download.docker.com/linux/ubuntu/dists/jammy/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+    kubenet: Repository: 'deb [arch=amd64] https://download.docker.com/linux/ubuntu jammy stable'
+    kubenet: Description:
+    kubenet: Archive for codename: jammy components: stable
+    kubenet: More info: https://download.docker.com/linux/ubuntu
+    kubenet: Adding repository.
+    kubenet: Adding deb entry to /etc/apt/sources.list.d/archive_uri-https_download_docker_com_linux_ubuntu-jammy.list
+    kubenet: Adding disabled deb-src entry to /etc/apt/sources.list.d/archive_uri-https_download_docker_com_linux_ubuntu-jammy.list     
+    kubenet: Hit:1 http://archive.ubuntu.com/ubuntu jammy InRelease
+    kubenet: Hit:2 http://archive.ubuntu.com/ubuntu jammy-updates InRelease
+    kubenet: Hit:3 http://security.ubuntu.com/ubuntu jammy-security InRelease
+    kubenet: Hit:4 http://archive.ubuntu.com/ubuntu jammy-backports InRelease
+    kubenet: Hit:5 https://download.docker.com/linux/ubuntu jammy InRelease
+    kubenet: Reading package lists...
+    kubenet: W: https://download.docker.com/linux/ubuntu/dists/jammy/InRelease: Key is stored in legacy trusted.gpg keyring (/etc/apt/trusted.gpg), see the DEPRECATION section in apt-key(8) for details.
+    kubenet: Reading package lists...
+    kubenet: Building dependency tree...
+    kubenet: Reading state information...
+    kubenet: The following additional packages will be installed:
+    kubenet:   docker-buildx-plugin docker-ce-rootless-extras docker-compose-plugin
+    kubenet:   libltdl7 libslirp0 pigz slirp4netns
+    kubenet: Suggested packages:
+    kubenet:   cgroupfs-mount | cgroup-lite
+    kubenet: The following NEW packages will be installed:
+    kubenet:   containerd.io docker-buildx-plugin docker-ce docker-ce-cli
+    kubenet:   docker-ce-rootless-extras docker-compose-plugin libltdl7 libslirp0 pigz
+    kubenet:   slirp4netns
+    kubenet: 0 upgraded, 10 newly installed, 0 to remove and 49 not upgraded.
+    kubenet: Need to get 120 MB of archives.
+    kubenet: After this operation, 440 MB of additional disk space will be used.
+    kubenet: Get:1 http://archive.ubuntu.com/ubuntu jammy/universe amd64 pigz amd64 2.6-1 [63.6 kB]
+    kubenet: Get:2 http://archive.ubuntu.com/ubuntu jammy/main amd64 libltdl7 amd64 2.4.6-15build2 [39.6 kB]
+    kubenet: Get:3 http://archive.ubuntu.com/ubuntu jammy/main amd64 libslirp0 amd64 4.6.1-1build1 [61.5 kB]
+    kubenet: Get:4 http://archive.ubuntu.com/ubuntu jammy/universe amd64 slirp4netns amd64 1.0.1-2 [28.2 kB]
+    kubenet: Get:5 https://download.docker.com/linux/ubuntu jammy/stable amd64 containerd.io amd64 1.7.27-1 [30.5 MB]
+    kubenet: Get:6 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-buildx-plugin amd64 0.23.0-1~ubuntu.22.04~jammy [34.7 MB]
+    kubenet: Get:7 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-ce-cli amd64 5:28.1.1-1~ubuntu.22.04~jammy [15.8 MB]
+    kubenet: Get:8 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-ce amd64 5:28.1.1-1~ubuntu.22.04~jammy [19.2 MB]
+    kubenet: Get:9 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-ce-rootless-extras amd64 5:28.1.1-1~ubuntu.22.04~jammy [6094 kB]
+    kubenet: Get:10 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-compose-plugin amd64 2.35.1-1~ubuntu.22.04~jammy 
+[13.8 MB]
+    kubenet: dpkg-preconfigure: unable to re-open stdin: No such file or directory
+    kubenet: Fetched 120 MB in 7s (17.6 MB/s)
+    kubenet: Selecting previously unselected package pigz.
+(Reading database ... 70216 files and directories currently installed.)
+    kubenet: Preparing to unpack .../0-pigz_2.6-1_amd64.deb ...
+    kubenet: Unpacking pigz (2.6-1) ...
+    kubenet: Selecting previously unselected package containerd.io.
+    kubenet: Preparing to unpack .../1-containerd.io_1.7.27-1_amd64.deb ...
+    kubenet: Unpacking containerd.io (1.7.27-1) ...
+    kubenet: Selecting previously unselected package docker-buildx-plugin.
+    kubenet: Preparing to unpack .../2-docker-buildx-plugin_0.23.0-1~ubuntu.22.04~jammy_amd64.deb ...
+    kubenet: Unpacking docker-buildx-plugin (0.23.0-1~ubuntu.22.04~jammy) ...
+    kubenet: Selecting previously unselected package docker-ce-cli.
+    kubenet: Preparing to unpack .../3-docker-ce-cli_5%3a28.1.1-1~ubuntu.22.04~jammy_amd64.deb ...
+    kubenet: Unpacking docker-ce-cli (5:28.1.1-1~ubuntu.22.04~jammy) ...
+    kubenet: Selecting previously unselected package docker-ce.
+    kubenet: Preparing to unpack .../4-docker-ce_5%3a28.1.1-1~ubuntu.22.04~jammy_amd64.deb ...
+    kubenet: Unpacking docker-ce (5:28.1.1-1~ubuntu.22.04~jammy) ...
+    kubenet: Selecting previously unselected package docker-ce-rootless-extras.
+    kubenet: Preparing to unpack .../5-docker-ce-rootless-extras_5%3a28.1.1-1~ubuntu.22.04~jammy_amd64.deb ...
+    kubenet: Unpacking docker-ce-rootless-extras (5:28.1.1-1~ubuntu.22.04~jammy) ...
+    kubenet: Selecting previously unselected package docker-compose-plugin.
+    kubenet: Preparing to unpack .../6-docker-compose-plugin_2.35.1-1~ubuntu.22.04~jammy_amd64.deb ...
+    kubenet: Unpacking docker-compose-plugin (2.35.1-1~ubuntu.22.04~jammy) ...
+    kubenet: Selecting previously unselected package libltdl7:amd64.
+    kubenet: Preparing to unpack .../7-libltdl7_2.4.6-15build2_amd64.deb ...
+    kubenet: Unpacking libltdl7:amd64 (2.4.6-15build2) ...
+    kubenet: Selecting previously unselected package libslirp0:amd64.
+    kubenet: Preparing to unpack .../8-libslirp0_4.6.1-1build1_amd64.deb ...
+    kubenet: Unpacking libslirp0:amd64 (4.6.1-1build1) ...
+    kubenet: Selecting previously unselected package slirp4netns.
+    kubenet: Preparing to unpack .../9-slirp4netns_1.0.1-2_amd64.deb ...
+    kubenet: Unpacking slirp4netns (1.0.1-2) ...
+    kubenet: Setting up docker-buildx-plugin (0.23.0-1~ubuntu.22.04~jammy) ...
+    kubenet: Setting up containerd.io (1.7.27-1) ...
+    kubenet: Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.
+    kubenet: Setting up docker-compose-plugin (2.35.1-1~ubuntu.22.04~jammy) ...
+    kubenet: Setting up libltdl7:amd64 (2.4.6-15build2) ...
+    kubenet: Setting up docker-ce-cli (5:28.1.1-1~ubuntu.22.04~jammy) ...
+    kubenet: Setting up libslirp0:amd64 (4.6.1-1build1) ...
+    kubenet: Setting up pigz (2.6-1) ...
+    kubenet: Setting up docker-ce-rootless-extras (5:28.1.1-1~ubuntu.22.04~jammy) ...
+    kubenet: Setting up slirp4netns (1.0.1-2) ...
+    kubenet: Setting up docker-ce (5:28.1.1-1~ubuntu.22.04~jammy) ...
+    kubenet: Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.
+    kubenet: Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.
+    kubenet: Processing triggers for man-db (2.10.2-1) ...
+    kubenet: Processing triggers for libc-bin (2.35-0ubuntu3.9) ...
+    kubenet: 
+    kubenet: Running kernel seems to be up-to-date.
+    kubenet:
+    kubenet: No services need to be restarted.
+    kubenet:
+    kubenet: No containers need to be restarted.
+    kubenet:
+    kubenet: No user sessions are running outdated binaries.
+    kubenet:
+    kubenet: No VM guests are running outdated hypervisor (qemu) binaries on this host.
+    kubenet: Docker version 28.1.1, build 4eba377
+==> kubenet: Running provisioner: Install ContainerLab (shell)...
+    kubenet: Running: script: Install ContainerLab
+    kubenet: 
+    kubenet: PRECONDITION STEP: Installing ContainerLab
+    kubenet: Downloading https://github.com/srl-labs/containerlab/releases/download/v0.67.0/containerlab_0.67.0_linux_amd64.deb
+    kubenet: Preparing to install containerlab 0.67.0 from package
+    kubenet: Selecting previously unselected package containerlab.
+    kubenet: (Reading database ... 70484 files and directories currently installed.)
+    kubenet: Preparing to unpack .../containerlab_0.67.0_linux_amd64.deb ...
+    kubenet: Unpacking containerlab (0.67.0) ...
+    kubenet: Setting up containerlab (0.67.0) ...
+    kubenet: Please run the command 'sudo usermod -aG clab_admins <insert your username here> && newgrp clab_admins' to ensure that you 
+are part of the Container admin group. You can check this by running 'groups'.
+    kubenet:   ____ ___  _   _ _____  _    ___ _   _ _____ ____  _       _     
+    kubenet:  / ___/ _ \| \ | |_   _|/ \  |_ _| \ | | ____|  _ \| | __ _| |__  
+    kubenet: | |  | | | |  \| | | | / _ \  | ||  \| |  _| | |_) | |/ _` | '_ \ 
+    kubenet: | |__| |_| | |\  | | |/ ___ \ | || |\  | |___|  _ <| | (_| | |_) |
+    kubenet:  \____\___/|_| \_| |_/_/   \_\___|_| \_|_____|_| \_\_|\__,_|_.__/ 
+    kubenet:
+    kubenet:     version: 0.67.0
+    kubenet:      commit: 77fe6c88
+    kubenet:        date: 2025-04-01T09:21:06Z
+    kubenet:      source: https://github.com/srl-labs/containerlab
+    kubenet:  rel. notes: https://containerlab.dev/rn/0.67/
+    kubenet: root
+    kubenet: root
+==> kubenet: Running provisioner: Create folder for ContainerLab (shell)...
+    kubenet: Running: script: Create folder for ContainerLab
+    kubenet: 
+    kubenet: KUBENET STEP0: Create folder for ContainerLab
+==> kubenet: Running provisioner: Kubenetctl setup (shell)...
+    kubenet: Running: script: Kubenetctl setup
+    kubenet: 
+    kubenet: KUBENET STEP1: Kubenetctl setup
+    kubenet: Setup kubenet Environment
+    kubenet: =========================
+    kubenet: # create k8s kind cluster [1/3]:
+    kubenet: 
+    kubenet: > kind create cluster --name kubenet
+    kubenet: Creating cluster "kubenet" ...
+    kubenet:  • Ensuring node image (kindest/node:v1.21.1) 🖼  ...
+    kubenet:  ✓ Ensuring node image (kindest/node:v1.21.1) 🖼
+    kubenet:  • Preparing nodes 📦   ...
+    kubenet:  ✓ Preparing nodes 📦
+    kubenet:  • Writing configuration 📜  ...
+    kubenet:  ✓ Writing configuration 📜
+    kubenet:  • Starting control-plane 🕹️  ...
+    kubenet:  ✓ Starting control-plane 🕹️
+    kubenet:  • Installing CNI 🔌  ...
+    kubenet:  ✓ Installing CNI 🔌
+    kubenet:  • Installing StorageClass 💾  ...
+    kubenet:  ✓ Installing StorageClass 💾
+    kubenet: Set kubectl context to "kind-kubenet"
+    kubenet: You can now use your cluster with:
+    kubenet:
+    kubenet: kubectl cluster-info --context kind-kubenet
+    kubenet:
+    kubenet: Thanks for using kind! 😊
+    kubenet:
+    kubenet: # Allow the kind cluster to communicate with the containerlab topology (clab will be created in a later step) [2/3]:
+    kubenet: 
+    kubenet: > sudo iptables -I DOCKER-USER -o br-$(docker network inspect -f '{{ printf "%.12s" .ID }}' kind) -j ACCEPT
+    kubenet: 
+    kubenet: # Deploy Containerlab topology [3/3]:
+    kubenet: 
+    kubenet: > sudo containerlab deploy -t https://raw.githubusercontent.com/kubenet-dev/kubenet/v0.0.1/lab/3node.yaml --reconfigure
+    kubenet: 12:07:20 INFO Containerlab started version=0.67.0
+    kubenet: 12:07:21 INFO Parsing & checking topology file=topo-3492357548.clab.yml
+    kubenet: 12:07:21 INFO Removing directory path=/tmp/.clab/clab-topo3nodesrl
+    kubenet: 12:07:21 INFO Creating docker network name=kubenet IPv4 subnet=172.21.0.0/16 IPv6 subnet="" MTU=1500
+    kubenet: 12:07:21 INFO Pulling ghcr.io/hellt/network-multitool:latest Docker image
+    kubenet: 12:07:36 INFO Done pulling ghcr.io/hellt/network-multitool:latest
+    kubenet: 12:07:36 INFO Pulling ghcr.io/nokia/srlinux:24.3.2-118 Docker image
+    kubenet: 12:12:11 INFO Done pulling ghcr.io/nokia/srlinux:24.3.2-118
+    kubenet: 12:12:11 INFO Creating lab directory path=/tmp/.clab/clab-topo3nodesrl
+    kubenet: 12:12:12 INFO Creating container name=client2
+    kubenet: 12:12:12 INFO Creating container name=client1
+    kubenet: 12:12:12 INFO Creating container name=edge01
+    kubenet: 12:12:12 INFO Creating container name=edge02
+    kubenet: 12:12:26 INFO Creating container name=core01
+    kubenet: 12:12:27 INFO Created link: client1:eth1 ▪┄┄▪ edge01:e1-1
+    kubenet: 12:12:27 INFO Running postdeploy actions kind=nokia_srlinux node=edge01
+    kubenet: 12:12:27 INFO Created link: client2:eth1 ▪┄┄▪ edge02:e1-1
+    kubenet: 12:12:27 INFO Running postdeploy actions kind=nokia_srlinux node=edge02
+    kubenet: 12:12:27 INFO Created link: edge01:e1-49 ▪┄┄▪ core01:e1-1
+    kubenet: 12:12:27 INFO Created link: edge02:e1-49 ▪┄┄▪ core01:e1-2
+    kubenet: 12:12:27 INFO Running postdeploy actions kind=nokia_srlinux node=core01
+    kubenet: 12:13:03 INFO Adding host entries path=/etc/hosts
+    kubenet: 12:13:03 INFO Adding SSH config for nodes path=/etc/ssh/ssh_config.d/clab-topo3nodesrl.conf
+    kubenet: ╭───────────────────────────┬──────────────────────────────────┬─────────┬────────────────╮
+    kubenet: │            Name           │            Kind/Image            │  State  │ IPv4/6 Address │
+    kubenet: ├───────────────────────────┼──────────────────────────────────┼─────────┼────────────────┤
+    kubenet: │ clab-topo3nodesrl-client1 │ linux                            │ running │ 172.21.0.4     │
+    kubenet: │                           │ ghcr.io/hellt/network-multitool  │         │ N/A            │
+    kubenet: ├───────────────────────────┼──────────────────────────────────┼─────────┼────────────────┤
+    kubenet: │ clab-topo3nodesrl-client2 │ linux                            │ running │ 172.21.0.3     │
+    kubenet: │                           │ ghcr.io/hellt/network-multitool  │         │ N/A            │
+    kubenet: ├───────────────────────────┼──────────────────────────────────┼─────────┼────────────────┤
+    kubenet: │ clab-topo3nodesrl-core01  │ nokia_srlinux                    │ running │ 172.21.0.6     │
+    kubenet: │                           │ ghcr.io/nokia/srlinux:24.3.2-118 │         │ N/A            │
+    kubenet: ├───────────────────────────┼──────────────────────────────────┼─────────┼────────────────┤
+    kubenet: │ clab-topo3nodesrl-edge01  │ nokia_srlinux                    │ running │ 172.21.0.2     │
+    kubenet: │                           │ ghcr.io/nokia/srlinux:24.3.2-118 │         │ N/A            │
+    kubenet: ├───────────────────────────┼──────────────────────────────────┼─────────┼────────────────┤
+    kubenet: │ clab-topo3nodesrl-edge02  │ nokia_srlinux                    │ running │ 172.21.0.5     │
+    kubenet: │                           │ ghcr.io/nokia/srlinux:24.3.2-118 │         │ N/A            │
+    kubenet: ╰───────────────────────────┴──────────────────────────────────┴─────────┴────────────────╯
+    kubenet: 
+==> kubenet: Running provisioner: Validate Kubernetes in Docker (shell)...
+    kubenet: Running: script: Validate Kubernetes in Docker
+    kubenet: 
+    kubenet: KUBENET STEP2: Validate Kubernetes in Docker
+    kubenet: CONTAINER ID   IMAGE                              COMMAND                  CREATED          STATUS          PORTS
+             NAMES
+    kubenet: d09e929b3cc0   ghcr.io/nokia/srlinux:24.3.2-118   "/tini -- fixuid -q …"   38 seconds ago   Up 37 seconds
+             clab-topo3nodesrl-core01
+    kubenet: a0e533ad7d01   ghcr.io/nokia/srlinux:24.3.2-118   "/tini -- fixuid -q …"   52 seconds ago   Up 38 seconds
+             clab-topo3nodesrl-edge02
+    kubenet: 24a40b513b0e   ghcr.io/hellt/network-multitool    "/docker-entrypoint.…"   52 seconds ago   Up 38 seconds   80/tcp, 443/tcp             clab-topo3nodesrl-client2
+    kubenet: a3e174270094   ghcr.io/nokia/srlinux:24.3.2-118   "/tini -- fixuid -q …"   52 seconds ago   Up 38 seconds
+             clab-topo3nodesrl-edge01
+    kubenet: 581bc019ec11   ghcr.io/hellt/network-multitool    "/docker-entrypoint.…"   52 seconds ago   Up 38 seconds   80/tcp, 443/tcp             clab-topo3nodesrl-client1
+    kubenet: 9bac88c58076   kindest/node:v1.21.1               "/usr/local/bin/entr…"   6 minutes ago    Up 6 minutes    127.0.0.1:44187->6443/tcp   kubenet-control-plane
+==> kubenet: Running provisioner: Validate Pods (shell)...
+    kubenet: Running: script: Validate Pods
+    kubenet: 
+    kubenet: KUBENET STEP3: Validate Pods
+    kubenet: NAMESPACE            NAME                                            READY   STATUS    RESTARTS   AGE
+    kubenet: kube-system          coredns-558bd4d5db-nrqnq                        1/1     Running   0          5m43s
+    kubenet: kube-system          coredns-558bd4d5db-rwvtt                        1/1     Running   0          5m43s
+    kubenet: kube-system          etcd-kubenet-control-plane                      1/1     Running   0          5m51s
+    kubenet: kube-system          kube-proxy-8fzgp                                1/1     Running   0          5m42s
+    kubenet: kube-system          kube-scheduler-kubenet-control-plane            1/1     Running   0          5m57s
+    kubenet: local-path-storage   local-path-provisioner-547f784dff-cwbhs         1/1     Running   0          5m43s
+==> kubenet: Running provisioner: Install kubenet components (shell)...
+    kubenet: Running: script: Install kubenet components
+    kubenet:
+    kubenet: KUBENET STEP4: Install kubenet components
+    kubenet: Install kubenet Components
+    kubenet: ==========================
+    kubenet: # install package server: (tool to interact with git from k8s using packages (KRM manifests)) [1/5]:
+    kubenet:
+    kubenet: > kubectl apply -f https://raw.githubusercontent.com/kubenet-dev/kubenet/v0.0.1/artifacts/out/pkgserver.yaml
+    kubenet: namespace/pkg-system created
+    kubenet: customresourcedefinition.apiextensions.k8s.io/packagevariants.config.pkg.pkgserver.dev created
+    kubenet: customresourcedefinition.apiextensions.k8s.io/repositories.config.pkg.pkgserver.dev created
+    kubenet: apiservice.apiregistration.k8s.io/v1alpha1.pkg.pkgserver.dev created
+    kubenet: deployment.apps/pkg-server created
+    kubenet: clusterrole.rbac.authorization.k8s.io/pkg-server-clusterrole created
+    kubenet: clusterrolebinding.rbac.authorization.k8s.io/package:system:auth-delegator created
+    kubenet: clusterrolebinding.rbac.authorization.k8s.io/pkg-server-clusterrolebinding created
+v/kubenet/v0.0.1/artifacts/out/sdc.yaml": error validating data: [ValidationError(CustomResourceDefinition.spec.versions[0].schema.openAPIV3Schema.properties.spec.properties.buffer): unknoes.buffer): unknown field "x-kubernetes-validations" in io.k8s.apiextensions-apiserver.pkg.apis.apiextensions.v1.JSONSchemaProps, ValidationError(CustomResourceDefinition.sions[0]hemAPIV3Sspec.versions[0].schema.openAPIV3Schema.properties.spec.properties.sync): unknown field "x-kubernetes-validations" in io.k8s.apiextensions-apiserver.pkg.apis.apiextensionsops, ValnErsource.v1.JSONSchemaProps, ValidationError(CustomResourceDefinition.spec.versions[0].schema.openAPIV3Schema.properties.spec.properties.validate): unknown field "x-kubernetes-valxtensioner.ions.vidations" in io.k8s.apiextensions-apiserver.pkg.apis.apiextensions.v1.JSONSchemaProps, ValidationError(CustomResourceDefinition.spec.versions[0].schema.openAPIV3Schema.pro: unknowubeo.k8s.perties.spec.properties.workers): unknown field "x-kubernetes-validations" in io.k8s.apiextensions-apiserver.pkg.apis.apiextensions.v1.JSONSchemaProps, ValidationError(Cuschema.oprop-kubertomResourceDefinition.spec.versions[0].schema.openAPIV3Schema.properties.spec): unknown field "x-kubernetes-validations" in io.k8s.apiextensions-apiserver.pkg.apis.apiexteore thesidansions.v1.JSONSchemaProps]; if you choose to ignore these errors, turn validation off with --validate=false
+    kubenet:
+    kubenet: step command failed: exit status 1
+The SSH command responded with a non-zero exit status. Vagrant
+assumes that this means the command failed. The output for this command
+should be in the log above. Please read the output to determine what
+went wrong.
